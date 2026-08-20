@@ -180,6 +180,11 @@ The notebook contains the detailed evaluation results and confusion matrix.
 
 ---
 
+### Some Important Screenshots
+![Loss and Accuracy for the Train and val](/src/Loss_Accuracy.png)
+
+
+
 ## Experimental Deployment
 
 The project includes an **experimental Gradio interface** for testing the trained model outside the notebook.
