@@ -182,6 +182,9 @@ The notebook contains the detailed evaluation results and confusion matrix.
 
 ### Some Important Screenshots
 ![Loss and Accuracy for the Train and val](/src/Loss_Accuracy.png)
+![Best validation accuracy](/src/best_validation.png)
+![Local image description](/src/confussion_matrix.png)
+
 
 
 
@@ -234,17 +237,20 @@ This experiment was useful precisely because it exposed the difference between *
 .
 ├── README.md
 ├── fashion_mnist_cnn.ipynb
-├── notebook_guide.md
 │
 ├── src/
 │   ├── data.py
 │   ├── model.py
-│   └── train.py
+│   ├── train.py
+│   ├── Loss_Accuracy.png
+│   ├── best_validation.png
+│   └── confussion_matrix.png
 │
 ├── experimental_deploy/
 │   ├── app.py
 │   ├── debug_preprocessing.py
 │   ├── model.py
+│   ├── requirements.txt
 │   └── fashion_cnn.pt
 │
 ├── requirements.txt
@@ -255,11 +261,14 @@ This experiment was useful precisely because it exposed the difference between *
 
 **`src/`**
 
-Contains the primary training implementation:
+Contains the primary training implementationa and assets:
 
 * `data.py` — dataset loading, preprocessing, transforms, and DataLoaders
 * `model.py` — CNN architecture
 * `train.py` — training loop, validation, checkpointing, and evaluation
+* `best_validation.png` -Screen shot of finding the best validation accuracy
+* `Loss_Accuracy.png` - Loss and Accuracy curve according to the Train and validation
+* `confusion_matrix` - Shows the how confusion between the classess
 
 **`experimental_deploy/`**
 
@@ -354,7 +363,7 @@ The main lessons were:
 
 * [x] **Step 1** — MLP from scratch: regression on a synthetic linear function
 * [x] **Step 2** — MLP on a classification task with a non-linear decision boundary
-* [x] **Step 4** — CNN on real image data using Fashion-MNIST
+* [x] **Step 3** — CNN on real image data using Fashion-MNIST
 
 ---
 
