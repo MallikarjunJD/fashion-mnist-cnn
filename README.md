@@ -183,7 +183,7 @@ The notebook contains the detailed evaluation results and confusion matrix.
 ### Some Important Screenshots
 ![Loss and Accuracy for the Train and val](/src/Loss_Accuracy.png)
 ![Best validation accuracy](/src/best_validation.png)
-![Local image description](/src/confussion_matrix.png)
+![Local image description](/src/confusion_matrix.png)
 
 
 
