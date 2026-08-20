@@ -5,13 +5,7 @@ Local run:      python app.py
 HF Spaces:      set this file as the Space's entry point (Gradio SDK),
                  alongside model.py, fashion_cnn.pt, and requirements.txt.
 
-FIX (see DEBUG_GUIDE.md): the previous version used `image.getextrema()[0]`
-(the single darkest pixel in the whole image) to decide whether to invert —
-which is almost never true for real photos, so inversion never triggered and
-every real-world image was fed to the model with inverted polarity relative
-to training data. This version detects background brightness from the image
-corners, crops tightly to the garment's bounding box (matching Fashion-MNIST's
-tight framing), pads to square, then resizes — all before normalizing.
+
 """
 
 import numpy as np
