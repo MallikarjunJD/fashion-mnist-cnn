@@ -353,6 +353,14 @@ The main lessons were:
 
 ---
 
+## Author
+
+**Mallikarjun Jadi**
+
+Computer Science Engineering Student
+
+Machine Learning Engineer | Full Stack Developer
+
 ## License
 
 MIT
